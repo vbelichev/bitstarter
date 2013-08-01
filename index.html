@@ -97,6 +97,12 @@
       .footer a {
         color: #ccccff;
       }
+      
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+      div.addthis_toolbox {
+        width:180px;
+        margin: 0 auto;
+      }
     </style>
   </head>
 
@@ -107,19 +113,19 @@
       <div class="navbar-inner">
       <div class="container">
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	    <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-		    <span class="icon-bar"></span>
-		      </button>
-		        <a class="brand" href="#">Bitstarter</a>
-			  <div class="nav-collapse collapse">
-			      <ul class="nav">
-			            <li class="active"><a href="#">Home</a></li>
-				          <li><a href="#about">About</a></li>
-					        <li><a href="#contact">Contact</a></li>
-						    </ul>
-						      </div><!-- /.nav-collapse -->
-						      </div>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+	<a class="brand" href="#">Bitstarter</a>
+	<div class="nav-collapse collapse">
+	  <ul class="nav">
+	    <li class="active"><a href="#">Home</a></li>
+	    <li><a href="#about">About</a></li>
+	    <li><a href="#contact">Contact</a></li>
+	  </ul>
+	</div><!-- /.nav-collapse -->
+      </div>
       </div>
     </div>
 
@@ -128,133 +134,141 @@
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <div class="row-fluid heading">
-      	   <div class="span12">
-	   	  <h1>My product</h1>
-		  	 </div>
+      	<div class="span12">
+	  <h1>My product</h1>
+	</div>
       </div>
       <div class="row-fluid subheading">
-      	   <div class="span12">
-	   	  <p class="lead">Very creative description of the product.</p>
-		     </div>
+      	<div class="span12">
+	  <p class="lead">Very creative description of the product.</p>
+	</div>
       </div>
       <div class="row-fluid pitch">
-      	   <div class="span5 offset1 video">
-	   	  <iframe src="http://www.metacafe.com/embed/yt-PF3zSo9jFuk/" width="440" height="248" allowFullScreen frameborder=0></iframe>
-		  	    <div style="font-size:12px;">
-					<a href="#">The Start-Up of YOU: Rediscovering the Entrepreneurial Spirit in All of Us</a>
-					     </div>
-						</div>
-						
-							<!-- We define a new 'actions' div to contaiin statistics, order and share buttons. -->
-							     <div class="span5 actions">
-							     	    <div class="row-fluid">
-								    	   <div class="span8 offset2">
-									   		     <div class="row-fluid statistics">
-											     	  		     <div class="span4">
-														     	    <div class="linediv-l">
-															    	     <h3>0</h3>
-																          <p>backers</p>
-																	     </div>
-																	         </div>
-																		     <div class="span4">
-																		     	    <div class="linediv-c">
-																			    	     <h3>$0</h3>
-																				          <p>of $1,000</p>
-																					  	  </div>
-																						      </div>
-																						          <div class="span4">
-																							         <div class="linediv-r">
-																								          <h3>50</h3>
-																									       <p>days left</p>
-																									       	         </div>
-																											     </div>
-																											       </div>
-																											          </div>
-																												     <div class="row-fluid">
-																												     	    <div class="span10 offset1">
-																													    	 	       <div class="thermometer progress active">
-																															       	    		         <div class="bar bar-success" style="width: 0%;"></div>
-																																			      		   <div class="bar bar-warning" style="width: 100%;"></div>
-																																					   		   </div>
-																																							      </div>
-																																							         </div>
-																																								    <div class="row-fluid">
-																																								    	   <div class="span6 offset3 order">
-																																									   		     <button class="btn btn-success btn-large">Preorder</button>
-																																											     	       </div>
-																																												          </div>
-																																													     <div class="row-fluid">
-																																													     	    <div class="span8 offset2 social">
-																																														    	 	      <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-																																																      	      		 <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-																																																			 	   </div>
-																																																				      </div>
-																																																				       </div>
-																																																				        </div>
+      	<div class="span5 offset1 video">
+	  <iframe src="http://www.metacafe.com/embed/yt-PF3zSo9jFuk/" width="440" height="248" allowFullScreen frameborder=0></iframe>
+	  <div style="font-size:12px;">
+	    <a href="#">The Start-Up of YOU: Rediscovering the Entrepreneurial Spirit in All of Us</a>
+	  </div>
+	</div>
+	
+	<!-- We define a new 'actions' div to contaiin statistics, order and share buttons. -->
+	<div class="span5 actions">
+	  <div class="row-fluid">
+	    <div class="span8 offset2">
+	      <div class="row-fluid statistics">
+		<div class="span4">
+		  <div class="linediv-l">
+		    <h3>0</h3>
+		    <p>backers</p>
+		  </div>
+		</div>
+		<div class="span4">
+		  <div class="linediv-c">
+		    <h3>$0</h3>
+		    <p>of $1,000</p>
+		  </div>
+		</div>
+		<div class="span4">
+		  <div class="linediv-r">
+		    <h3>50</h3>
+		    <p>days left</p>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="row-fluid">
+	      <div class="span10 offset1">
+		<div class="thermometer progress active">
+		  <div class="bar bar-success" style="width: 0%;"></div>
+		  <div class="bar bar-warning" style="width: 100%;"></div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="row-fluid">
+	      <div class="span6 offset3 order">
+		<button class="btn btn-success btn-large">Preorder</button>
+	      </div>
+	    </div>
+	    <div class="row-fluid">
+	      <div class="span8 offset2 social">
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		  <a class="addthis_button_preferred_1"></a>
+		  <a class="addthis_button_preferred_2"></a>
+		  <a class="addthis_button_compact"></a>
+		  <a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fab0e66bdfafb4"></script>
+		<!-- AddThis Button END -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
       </div>
-
+      
       <div class="row-fluid section1">
-      	   <div class="span5 offset1 asset">
-	   	  <img class="img-polaroid" alt="Placeholder" src="http://www.betadaily.com/wp-content/uploads/2010/02/business-plan-writer.jpg">
-		       </div>
-			<div class="span5 copy">
-			       <p>
-				  Here will stand the banner of the product and some information about it, its founder and audience.
-				         </p>
-						</div>
+      	<div class="span5 offset1 asset">
+	  <img class="img-polaroid" alt="Placeholder" src="http://www.betadaily.com/wp-content/uploads/2010/02/business-plan-writer.jpg">
+	</div>
+	<div class="span5 copy">
+	  <p>
+	    Here will stand the banner of the product and some information about it, its founder and audience.
+	  </p>
+	</div>
       </div>
-
+      
       <div class="row-fluid section2">
-      	   <div class="span5 offset1 copy copy-right">
-	   	  <p>
-			  More details, business motivaton, market research.
-			         </p>
-					</div>
-						<div class="span5 asset">
-						       <img class="img-polaroid" alt="Placeholder" src="http://bcibusinessarticles.files.wordpress.com/2010/10/starting-a-business.jpg">
-						       	    </div>
+      	<div class="span5 offset1 copy copy-right">
+	  <p>
+	    More details, business motivaton, market research.
+	  </p>
+	</div>
+	<div class="span5 asset">
+	  <img class="img-polaroid" alt="Placeholder" src="http://bcibusinessarticles.files.wordpress.com/2010/10/starting-a-business.jpg">
+	</div>
       </div>
       
       <div class="row-fluid faq">
-      	   <div class="span10 offset1">
-	   	  <h3>FAQ</h3>
-			  <div class="accordion" id="accordion2">
-			       			 <div class="accordion-group">
-							  <div class="accordion-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-									   			    			     What does FAQ stand for?
-															     	       	   </a>
-																	       </div>
-																	           <div id="collapseOne" class="accordion-body collapse">
-																		   			 		       <div class="accordion-inner">
-																							       	        Frequently Asked Question.
-																										   	  </div>
-																											      </div>
-																											        </div>
-																												  <div class="accordion-group">
-																												          <div class="accordion-heading">
-																													         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-																														    			     			      What steps will you make to ship the product to market and make MVP?
-																																				      	   	      </a>
-																																						          </div>
-																																							      <div id="collapseTwo" class="accordion-body collapse">
-																																							      	   		    			  <div class="accordion-inner">
-																																													           First the bitstarter web site of the product will be finished. Then starts the brainstorming about financing, physical realization, implementing selling strategies, reclame and innovations.
-																																														   	     		</div>
-																																																	    </div>
-																																																	      </div>
-																																																	         </div>
-																																																		  </div>
-
+      	<div class="span10 offset1">
+	  <h3>FAQ</h3>
+	  <div class="accordion" id="accordion2">
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		  What does FAQ stand for?
+		</a>
+	      </div>
+	      <div id="collapseOne" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Frequently Asked Question.
+		</div>
+	      </div>
+	    </div>
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		  What steps will you make to ship the product to market and make MVP?
+		</a>
+	      </div>
+	      <div id="collapseTwo" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  First the bitstarter web site of the product will be finished. Then starts the brainstorming about financing, physical realization, implementing selling strategies, reclame and innovations.
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
       </div>
-
+      
       <div class="row-fluid footer">
-      	   <div class="span12">
-	   	  <p>This work is licensed under the
-		  	       <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0 </a>,
-			       	  							   without all the cruft that would otherwise be put at the bottom of the page.
-											   	     </p>
-													</div>
+      	<div class="span12">
+	  <p>This work is licensed under the
+	    <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0 </a>,
+	    without all the cruft that would otherwise be put at the bottom of the page.
+	  </p>
+	</div>
       </div>
     </div>
   </body>
